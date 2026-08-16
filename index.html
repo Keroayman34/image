@@ -12,6 +12,8 @@
     />
     <style>
       :root {
+        /* Mobile birthday layout polish marker. */
+        /* Mobile birthday layout polish marker. */
         --ink: #fff8ff;
         --muted: #d9cbe6;
         --rose: #ff5d9e;
@@ -699,6 +701,11 @@
         .riddle-panel {
           padding-top: 54px;
         }
+        .reveal-phase {
+          align-content: start;
+          gap: 12px;
+          padding: 70px 14px 20px;
+        }
         .garland {
           top: 8px;
           height: 58px;
@@ -709,38 +716,52 @@
           border-top-width: 24px;
         }
         .floating-note {
-          max-width: 128px;
-          padding: 8px 10px;
+          max-width: 118px;
+          padding: 7px 9px;
+          font-size: 0.78rem;
+          box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
         }
         .floating-note.n1 {
-          top: 15%;
-          left: 4%;
+          top: 76px;
+          left: 5%;
         }
         .floating-note.n2 {
-          top: 15%;
-          right: 4%;
+          top: 76px;
+          right: 5%;
         }
         .floating-note.n3,
         .floating-note.n4 {
           display: none;
         }
         .side-balloon.left {
-          bottom: 12%;
-          left: -10px;
-          scale: 0.74;
+          bottom: 18px;
+          left: -18px;
+          scale: 0.58;
+          opacity: 0.82;
         }
         .side-balloon.right {
-          top: 18%;
-          right: -14px;
-          scale: 0.72;
+          top: 110px;
+          right: -22px;
+          scale: 0.56;
+          opacity: 0.76;
         }
         .side-balloon.small {
           display: none;
         }
         .photo-frame {
-          width: min(94vw, 615px);
+          width: min(86vw, 360px);
           padding: 9px;
           border-radius: 28px;
+          margin-top: 38px;
+        }
+        .photo-frame img {
+          border-radius: 21px;
+        }
+        .final-text {
+          max-width: 94vw;
+          font-size: clamp(1rem, 4.6vw, 1.24rem);
+          line-height: 1.62;
+          text-shadow: 0 4px 16px rgba(0, 0, 0, 0.34);
         }
       }
     </style>
@@ -832,7 +853,7 @@
             <div class="string"></div>
           </div>
           <span class="floating-note n1">كبر النونو 🎂</span>
-          <span class="floating-note n2">برضو هتفضلي طالبة🎈</span>
+          <span class="floating-note n2">اتنين تلاتة 🎈</span>
           <span class="floating-note n3">عيد ميلاد سعيد</span>
           <span class="floating-note n4">أجمل تماف ❤️</span>
         </div>
